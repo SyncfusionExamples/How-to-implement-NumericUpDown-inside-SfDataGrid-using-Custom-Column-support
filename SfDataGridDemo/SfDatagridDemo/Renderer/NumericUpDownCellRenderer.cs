@@ -36,7 +36,7 @@ namespace SfDatagridDemo.Renderer
 
         protected override void OnRender(Graphics graphics, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
         {           
-            var NumericUpDownExtControl = new NumericUpDownExtControl();
+            var NumericUpDownExtControl = new NumericUpDown();
             NumericUpDownExtControl.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             NumericUpDownExtControl.Value =Convert.ToDecimal(cellValue);
             NumericUpDownExtControl.Increment = new decimal(new int[] { 5, 0, 0, 0 });
