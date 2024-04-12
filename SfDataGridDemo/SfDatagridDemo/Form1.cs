@@ -34,7 +34,7 @@ namespace SfDatagridDemo
             this.sfDataGrid1.Columns.Add(new GridNumericColumn() { MappingName = "OrderID", HeaderText = "Order ID" });
             this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "CustomerID", HeaderText = "Customer ID" });
             this.sfDataGrid1.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", HeaderText = "Quantity" });
-            this.sfDataGrid1.Columns.Add(new NumericUpDownExtColumn() { MappingName = "NumericUpDown", HeaderText = "NumericUpDown" , Width=150});
+            this.sfDataGrid1.Columns.Add(new NumericUpDownExtColumn() { MappingName = "NumericUpDown", HeaderText = "NumericUpDown", Width = 150 });
         }
     }
 

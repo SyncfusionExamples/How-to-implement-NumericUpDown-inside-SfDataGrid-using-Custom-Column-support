@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace SfDatagridDemo.Renderer
 {
-    public class NumericUpDownExtColumn : GridColumn
+    public class NumericUpDownExtColumn:GridColumn
     {
         public NumericUpDownExtColumn()
         {
-            SetCellType("NumericUpDown");
+            SetCellType("NumericUpDown");            
         }
-
+      
     }
 }

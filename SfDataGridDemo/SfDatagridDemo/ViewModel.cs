@@ -60,7 +60,7 @@ namespace SfDatagridDemo
         {
             List<OrderInfo> ordersDetails = new List<OrderInfo>();
            
-            for (int i = 1000; i < count + 1000; i++)
+            for (int i = 10000; i < count + 10000; i++)
             {
                 ordersDetails.Add(GetOrder(i));
             }
@@ -82,7 +82,7 @@ namespace SfDatagridDemo
             var order = new OrderInfo();
             order.OrderID = i;
             order.CustomerID = GetCustomerID(i);
-            order.Quantity = r.Next(i % 60);
+            order.Quantity = r.Next(i % 100);
             order.NumericUpDown = r.Next(i % 9);
             return order;
         }

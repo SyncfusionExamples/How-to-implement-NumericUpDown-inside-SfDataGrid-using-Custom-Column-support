@@ -1,5 +1,4 @@
-﻿using Syncfusion.Data;
-using Syncfusion.Styles;
+﻿using Syncfusion.Styles;
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Grid;
 using Syncfusion.WinForms.DataGrid;
@@ -29,16 +28,16 @@ namespace SfDatagridDemo.Renderer
     {
         public NumericUpDownCellRenderer(SfDataGrid dataGrid)
         {
-            DataGrid = dataGrid;          
+            DataGrid = dataGrid;
             IsInEditing = false;
         }
         protected SfDataGrid DataGrid { get; set; }
 
         protected override void OnRender(Graphics graphics, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
-        {           
+        {
             var NumericUpDownExtControl = new NumericUpDown();
             NumericUpDownExtControl.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            NumericUpDownExtControl.Value =Convert.ToDecimal(cellValue);
+            NumericUpDownExtControl.Value = Convert.ToDecimal(cellValue);
             NumericUpDownExtControl.Increment = new decimal(new int[] { 5, 0, 0, 0 });
             NumericUpDownExtControl.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
             NumericUpDownExtControl.Maximum = new decimal(new int[] { 40, 0, 0, 0 });
@@ -49,4 +48,7 @@ namespace SfDatagridDemo.Renderer
             DataGrid.GetTopLevelParentDataGrid().TableControl.Controls.Add(NumericUpDownExtControl);
         }
     }
+
+
+
 }
